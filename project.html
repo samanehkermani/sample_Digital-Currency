@@ -2,15 +2,15 @@
 <head>
   <title>Digital Currency </title> 
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link  type="text/css" rel="stylesheet" href="digital.css" />
     <link href="bootstrap\bootstrap.css" rel="stylesheet"> 
     <link href="bootstrap\bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="digital.js"></script>
 </head>
 <body>
-  <div class="container-fluid col-sm-12" id="backgroun">
+  <div class="container-fluid col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="backgroun">
     
-    <div class="col-sm-6" id="digital">
+    <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6" id="digital">
       <p id="p12">+</p><br /><br />
     <span id="span16"><b>MARKET</b></span>
     <span id="span17"><b>VIEW ALL</b>
@@ -27,28 +27,30 @@
       </select>
     </button>
     <div  id="arz4">
-     <div id="img7" class="col-12">
+     <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
      <span id="span12"><b>41.580</b></span><br />
        <span id="span13">Low price</span></div>
       </div>
       <div  id="arz4">
-        <div id="img7" class="col-12">
+        <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
         <span id="span19"><b>$1233.00</b></span><br />
           <span id="span13">High price</span></div>
         </div>
          <div  id="arz4">
-          <div id="img7" class="col-12">
+          <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
           <span id="span12"><b>$65580</b></span><br />
             <span id="span13">24H Volume</span></div>
            </div>
            <div  id="arz4">
-            <div id="img7" class="col-12">
+            <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <span id="span21"><b>-$0.05580</b></span><br />
               <span id="span13">24H change</span></div> 
     </div><br /><br/>
     <div class="row cols-2   text-right">
-      <div class="col-1">
-         <img id="img10" src="img/10.png">
+      <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+        <div id="sam" class="col-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+          <canvas id="myChart"></canvas>
+        </div>
         </div><!--col-3-->
        <div class="col ">
         <p id="span26">1H</p><br>
@@ -59,68 +61,153 @@
           <p id="span31">ALL</p><br>
                      </div><!--col-->
     </div><br />
-    <div id="span40" class="col-12">
-      <div id="span41" class="col-6">
+     <div id="span40" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div id="span41" class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <br />
         <span id="span44">
           Buy
         </span>
         <span id="span45">1 BTC-$2500.125</span>
         <br><br/>
         <span id="span42">
-          10
-          <span>|
-        <select id="select">
+          10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>|</span>
+        <select id="select1">
             <option>BTC</option>
             <option>ETH</option>
             <option>ADA</option>
             <option>XRP</option>
             <option>USDT</option>
           </select>
-        </span>
-        </span>
+        </span>&nbsp;
         <span id="span43">
-          10
+          10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>|
-        <select id="select">
-            <option>BTC</option>
-            <option>ETH</option>
-            <option>ADA</option>
-            <option>XRP</option>
-            <option>USDT</option>
+        <select id="select1">
+            <option>USD</option>
+            <option>USD</option>
+            <option>USD</option>
+            <option>USD</option>
+            <option>USD</option>
           </select>
         </span>
-        </span>
+        </span><br/><br />
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <span id="span46">
+            Buy BTC
+          </span>
+        </div><br />
         </div>
-        <div id="span41" class="col-6">
+        <div id="span41" class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <br />
+          <span id="span44">
+          Sell
+          </span>
+          <span id="span45">1 BTC-$2500.125</span>
+          <br><br/>
           <span id="span42">
-            10
-            <span>|
-          <select id="select">
+            10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>|</span>
+          <select id="select1">
               <option>BTC</option>
               <option>ETH</option>
               <option>ADA</option>
               <option>XRP</option>
               <option>USDT</option>
             </select>
-          </span>
-          </span>
+          </span>&nbsp;
           <span id="span43">
-            10
+            10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span>|
-          <select id="select">
-              <option>BTC</option>
-              <option>ETH</option>
-              <option>ADA</option>
-              <option>XRP</option>
-              <option>USDT</option>
+          <select id="select1">
+              <option>USD</option>
+              <option>USD</option>
+              <option>USD</option>
+              <option>USD</option>
+              <option>USD</option>
             </select>
           </span>
-          </span>
+          </span><br/><br />
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <span id="span46">
+              Sell BTC
+            </span>
+          </div><br />
+          </div> 
+          <span id="span50"><b>ORDER BOOK</b></span>
+            <span id="span51"><b>VIWE ALL</b></span>
+          <p id="pl">+</p><br/>
+          <div id="arz7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table>
+              <tr>
+                <td>Volume</td>
+                <td>Date</td>
+                <td>Buy price</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">Sell price</td>
+                <td>Date</td>
+                <td>Volume</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25-08-2021</td>
+                <td>226</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">220</td>
+                <td>25-08-2021</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25-08-2021</td>
+                <td>120</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">620</td>
+                <td>25-08-2021</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25-08-2021</td>
+                <td>150</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">520</td>
+                <td>25-08-2021</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25-08-2021</td>
+                <td>235</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">100</td>
+                <td>25-08-2021</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25-08-2021</td>
+                <td>320</td>
+                <td style="
+                padding-right: 0px;
+                padding-left: 80px;">200</td>
+                <td>25-08-2021</td>
+                <td>50</td>
+              </tr>
+            </table>
+                  </div>
+          </div></div>
+        <div>
+          
         </div>
-    </div>
-    
+       
   </div>
-   <div class="col-sm-4" id="arz">
+   <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" id="arz">
      <span id="span">+</span><br /><br />
     <p id="p1">ACCOUNT INFORMATION</p>
   <div  id="arz2">
@@ -128,7 +215,7 @@
     <p id="span2"><b>+2.7%</b></p>
     <p id="p2"><b>Balance</b></p>
     <div class="row cols-2   text-left">
-     <div class="col-1">
+     <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
         <img id="img2" src="img/2.png">
        </div><!--col-3-->
       <div class="col ">
@@ -137,7 +224,7 @@
                     </div><!--col-->
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="row cols-2   text-left">
-                      <div class="col-2">
+                      <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                           <img id="img2" src="img/3.png">
                       </div><!--col-3-->
                       <div class="col ">
@@ -157,51 +244,52 @@
     <div>
       <p id="p4"><b>WALLET</b></p>
       <div  id="arz4">
-        <div id="img4" class="col-12">
+        <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
           <img  src="img/4.png">&nbsp;
           <span id="span10" style="text-align:left;"><b> Litecoin</b></span>
           <p id="span11"><b>+0.27%</b></p>
        </div>
-       <img id="img5" src="img/7.png">
-       <div id="img7" class="col-12">
+       <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
+       <div id="img7" class="col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
        <span id="span12"><b>$983.13</b></span><br />
          <span id="span13"><b>Balance</b></span></div>
-        </div><br /><br/>
+        </div><br /><br/><br />
         <div  id="arz4">
-          <div id="img4" class="col-12">
+          <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <img  src="img/5.png">&nbsp;
-            <span id="span10" style="text-align:left;"><b> Litecoin</b></span>
+            <span id="span10" style="text-align:left;"><b class="symbol"></b></span>
+            <span class="name"></span>
             <p id="span15"><b>+0.27%</b></p>
          </div>
-         <img id="img8" src="img/8.png">
-         <div id="img7" class="col-12">
+         <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
+         <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
          <span id="span12"><b>$1211.05</b></span><br />
            <span id="span13"><b>Balance</b></span></div>
-          </div><br /><br/>
+          </div><br /><br/><br />
           <div  id="arz4">
-            <div id="img4" class="col-12">
+            <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
               <img  src="img/6.png">&nbsp;
               <span id="span10" style="text-align:left;"><b> Litecoin</b></span>
               <p id="span15"><b>+0.27%</b></p>
            </div>
-           <img id="img8" src="img/9.png">
-           <div id="img7" class="col-12">
+           <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
+           <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
            <span id="span12"><b>$83.13</b></span><br />
              <span id="span13"><b>Balance</b></span></div>
             </div><br /><br/>
           </div>
-         
-            
+          <br /><br/>
+          
    </div>
    
     <!--menu-->
-    <div class=" col-sm-2" id="menu">
-     <div class="col-sm-12" id="logo">
+    <div class=" col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2" id="menu">
+     <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="logo">
        <img id="img1" src="img/1.png" />
         <span><b>Murad</b></span>
       </div>
       </div>
-      <div class="col-sm-2 rounded " id="icon">
+      <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 rounded " id="icon">
         <a href="#"> <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pc-display-horizontal " viewBox="0 0 16 16">
           <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
         </svg> &nbsp;Home</a><br />
@@ -223,6 +311,16 @@
         </svg>&nbsp;Log Out </a>
       </div>
     </div>      
-  </div>    
+  </div> 
+  <script>
+    $.getJSON("https://www.arzypto.com/api/b9dba16c-7b35-40f8-bb33-9e74be2e86fd/coin/list/exchangeCoin"
+    ,function(data){
+        console.log(data);
+        var symbol=data.data.binance[0].symbol;
+        $(".symbol").append(symbol);
+        var name=data.data.binance[0].fa_name;
+        $(".name").append(name);
+       })
+</script>
 </body>
 </html>
