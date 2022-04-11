@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Digital Currency </title> 
+  
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link  type="text/css" rel="stylesheet" href="digital.css" />
@@ -243,40 +244,9 @@
     </div>
     <div>
       <p id="p4"><b>WALLET</b></p>
-      <div  id="arz4">
-        <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-          <img  src="img/4.png">&nbsp;
-          <span id="span10" style="text-align:left;"><b> Litecoin</b></span>
-          <p id="span11"><b>+0.27%</b></p>
-       </div>
-       <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
-       <div id="img7" class="col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-       <span id="span12"><b>$983.13</b></span><br />
-         <span id="span13"><b>Balance</b></span></div>
-        </div><br /><br/><br />
-        <div  id="arz4">
-          <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <img  src="img/5.png">&nbsp;
-            <span id="span10" style="text-align:left;"><b class="symbol"></b></span>
-            <span class="name"></span>
-            <p id="span15"><b>+0.27%</b></p>
-         </div>
-         <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
-         <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-         <span id="span12"><b>$1211.05</b></span><br />
-           <span id="span13"><b>Balance</b></span></div>
-          </div><br /><br/><br />
-          <div  id="arz4">
-            <div id="img4" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-              <img  src="img/6.png">&nbsp;
-              <span id="span10" style="text-align:left;"><b> Litecoin</b></span>
-              <p id="span15"><b>+0.27%</b></p>
-           </div>
-           <img id="img8" src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" alt="" class="coin-chart">
-           <div id="img7" class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-           <span id="span12"><b>$83.13</b></span><br />
-             <span id="span13"><b>Balance</b></span></div>
-            </div><br /><br/>
+      <div id="cripto"> 
+
+      </div>
           </div>
           <br /><br/>
           
@@ -313,14 +283,12 @@
     </div>      
   </div> 
   <script>
-    $.getJSON("https://www.arzypto.com/api/b9dba16c-7b35-40f8-bb33-9e74be2e86fd/coin/list/exchangeCoin"
+       $.getJSON("https://api.nobitex.ir/market/stats"
     ,function(data){
-        console.log(data);
-        var symbol=data.data.binance[0].symbol;
-        $(".symbol").append(symbol);
-        var name=data.data.binance[0].fa_name;
-        $(".name").append(name);
-       })
-</script>
+       console.log(data);
+         var symbol=data.global.binance.btc;
+         $(".span12").append(symbol);
+       })</script>
+       <script src="digital.js"></script>
 </body>
 </html>
